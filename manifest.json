@@ -51,8 +51,6 @@
 
   "permissions": [
     "tabs"
-    // "https://*.highspot.com/",
-    // "http://localhost:3000/"
   ],
 
   "short_name": "PureMeme"
