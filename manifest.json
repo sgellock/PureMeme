@@ -1,0 +1,60 @@
+{
+  "manifest_version": 2,
+
+  "name": "PureMeme",
+  "version": "0.0.10",
+
+
+  "default_locale": "en",
+  "description": "More memes.  Less noise.",
+  "icons": {
+    "16":  "icons/16x16.png",
+    "48":  "icons/48x48.png",
+    "128": "icons/128x128.png"
+  },
+
+  "background": {
+    "page": "src/bg/background.html",
+    "persistent": false
+  },
+
+  "page_action" : {
+    "default_icon": {
+      "19":  "icons/19x19.png",
+      "38":  "icons/38x38.png"
+    },
+    "default_title": "PureMeme",
+    "default_popup": "src/page_action/page_action.html"
+  },
+
+  "author": "Scott Gellock",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*.techmeme.com/*",
+        "https://*.techmeme.com/*"
+      ],
+      "js": [
+        "js/jquery/jquery-2.1.3.min.js",
+        "src/inject/inject.js"
+      ]
+    }
+  ],
+
+
+  "homepage_url": "http://www.scotg.net",
+
+  "minimum_chrome_version": "37",
+
+  "offline_enabled": true,
+
+  "permissions": [
+    "tabs",
+    "https://*.highspot.com/",
+    "http://localhost:3000/"
+  ],
+
+  "short_name": "PureMeme"
+
+}
