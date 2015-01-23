@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "PureMeme",
-  "version": "0.0.10",
+  "version": "0.0.11",
 
 
   "default_locale": "en",
@@ -50,9 +50,9 @@
   "offline_enabled": true,
 
   "permissions": [
-    "tabs",
-    "https://*.highspot.com/",
-    "http://localhost:3000/"
+    "tabs"
+    // "https://*.highspot.com/",
+    // "http://localhost:3000/"
   ],
 
   "short_name": "PureMeme"
